@@ -3,32 +3,42 @@ import "./styles.css";
 import { useState } from "react";
 
 const travelDB = {
-  Summer: [
-    { name: "Shillong", place: "Scotland Of East in Meghalaya" },
-    { name: "Mount Abu", place: "Only Hill Station in Rajasthan" }
+Summer: [
+    { name: "Shillong", place: "Scotland Of East in Meghalaya(9/10)" },
+    { name: "Mount Abu", place: "Only Hill Station in Rajasthan(8/10)" },
+    { name: "Coorg", place: "Scotland of India(10/10)" }
   ],
 
   Winter: [
     {
       name: "Kerala",
-      place: "Munnar – Wayanad – Alleppey"
+      place: "Munnar – Wayanad – Alleppey(9/10)"
     },
     {
       name: "Karnataka",
-      place: "Hampi – Mysore"
+      place: "Hampi (8/10)"
+    },
+    {
+      name: "Tamil Nandu",
+      place: "Pondicherry (9/10)"
     }
   ],
   Rainy: [
     {
-      name: "Lonavala",
-      place: "Maharashtra (25°C)"
+      name: "Maharashtra",
+      place: "Lonavala(8/10)"
     },
     {
-      name: "Coorg",
-      place: "Karnataka (16°C)"
+      name: "Goa",
+      place: "(9/10)"
+    },
+    {
+      name: "Karnataka",
+      place: "Chikmagalur(9/10)"
     }
   ]
 };
+
 
 export default function App() {
   const [selectedseason, setseason] = useState("Rainy");
